@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Calibri_Bold.ttf">
+            <string>Calibri-Bold</string>
+        </array>
+        <array key="calibri.ttf">
+            <string>Calibri</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="163" id="KGk-i7-Jjw" customClass="ManageMemberCell" customModule="Lumity" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="455" height="163"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="455" height="163"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="5NI-IK-c4K" customClass="dateSportImageView" customModule="Lumity" customModuleProvider="target">
+                        <rect key="frame" x="28" y="8" width="30" height="30"/>
+                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="3PL-x5-z0b"/>
+                            <constraint firstAttribute="height" constant="30" id="V0T-fj-wUS"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="15"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FfC-Zr-CSy" customClass="GradientView2" customModule="Lumity" customModuleProvider="target">
+                        <rect key="frame" x="350" y="9" width="85" height="28"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bMN-Md-FRR" customClass="dateSportButton" customModule="Lumity" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="85" height="28"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Calibri-Bold" family="Calibri" pointSize="11"/>
+                                <state key="normal" title="Remove"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onRemove:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="4Mz-78-net"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="85" id="6Th-eW-xI8"/>
+                            <constraint firstItem="bMN-Md-FRR" firstAttribute="top" secondItem="FfC-Zr-CSy" secondAttribute="top" id="QRJ-5E-tEb"/>
+                            <constraint firstAttribute="height" constant="28" id="ck9-N8-UPI"/>
+                            <constraint firstAttribute="bottom" secondItem="bMN-Md-FRR" secondAttribute="bottom" id="eq2-9L-1yZ"/>
+                            <constraint firstAttribute="trailing" secondItem="bMN-Md-FRR" secondAttribute="trailing" id="jYz-8U-BbI"/>
+                            <constraint firstItem="bMN-Md-FRR" firstAttribute="leading" secondItem="FfC-Zr-CSy" secondAttribute="leading" id="tYu-Qy-0zp"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="firstColor">
+                                <color key="value" name="GradientLeft6A68F2"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="secondColor">
+                                <color key="value" name="GradientRight F87797"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amy Baker" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zQ7-wz-bGb">
+                        <rect key="frame" x="73" y="10" width="273" height="15"/>
+                        <fontDescription key="fontDescription" name="Calibri" family="Calibri" pointSize="15"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hey, How are you now?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GBn-yJ-7cO">
+                        <rect key="frame" x="73" y="29" width="273" height="12"/>
+                        <fontDescription key="fontDescription" name="Calibri" family="Calibri" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="FfC-Zr-CSy" secondAttribute="trailing" constant="20" id="33d-7d-5cH"/>
+                    <constraint firstItem="5NI-IK-c4K" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="28" id="9Xz-be-zwy"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="5NI-IK-c4K" secondAttribute="bottom" constant="8" id="F2u-Xw-Dc9"/>
+                    <constraint firstItem="FfC-Zr-CSy" firstAttribute="leading" secondItem="zQ7-wz-bGb" secondAttribute="trailing" constant="4" id="Kgs-C0-7Ih"/>
+                    <constraint firstItem="zQ7-wz-bGb" firstAttribute="leading" secondItem="5NI-IK-c4K" secondAttribute="trailing" constant="15" id="VUM-8V-OPJ"/>
+                    <constraint firstItem="GBn-yJ-7cO" firstAttribute="top" secondItem="zQ7-wz-bGb" secondAttribute="bottom" constant="4" id="XPz-71-DhT"/>
+                    <constraint firstItem="FfC-Zr-CSy" firstAttribute="centerY" secondItem="5NI-IK-c4K" secondAttribute="centerY" id="Zxl-Im-Uv9"/>
+                    <constraint firstItem="zQ7-wz-bGb" firstAttribute="top" secondItem="5NI-IK-c4K" secondAttribute="top" constant="2" id="llE-MF-Ddf"/>
+                    <constraint firstItem="GBn-yJ-7cO" firstAttribute="leading" secondItem="zQ7-wz-bGb" secondAttribute="leading" id="mks-x5-1bQ"/>
+                    <constraint firstItem="GBn-yJ-7cO" firstAttribute="trailing" secondItem="zQ7-wz-bGb" secondAttribute="trailing" id="teo-Rn-iNq"/>
+                    <constraint firstItem="5NI-IK-c4K" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="yad-jO-7sf"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="headlineLabel" destination="GBn-yJ-7cO" id="gzk-rm-ct3"/>
+                <outlet property="nameLabel" destination="zQ7-wz-bGb" id="wdW-v8-KMl"/>
+                <outlet property="profileImageView" destination="5NI-IK-c4K" id="UpC-jP-Acg"/>
+                <outlet property="removeBackGroundView" destination="FfC-Zr-CSy" id="xz8-qx-5aA"/>
+                <outlet property="removeButton" destination="bMN-Md-FRR" id="hdv-Uk-5SQ"/>
+            </connections>
+            <point key="canvasLocation" x="229.71014492753625" y="95.424107142857139"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="5NI-IK-c4K">
+            <size key="intrinsicContentSize" width="128" height="128"/>
+        </designable>
+        <designable name="bMN-Md-FRR">
+            <size key="intrinsicContentSize" width="38" height="23"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="placeholder" width="128" height="128"/>
+        <namedColor name="GradientLeft6A68F2">
+            <color red="0.41600000858306885" green="0.40799999237060547" blue="0.94900000095367432" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="GradientRight F87797">
+            <color red="0.97299998998641968" green="0.46700000762939453" blue="0.59200000762939453" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

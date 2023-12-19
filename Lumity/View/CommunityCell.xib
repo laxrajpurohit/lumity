@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Calibri_Bold.ttf">
+            <string>Calibri-Bold</string>
+        </array>
+        <array key="calibri.ttf">
+            <string>Calibri</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="115" id="KGk-i7-Jjw" customClass="CommunityCell" customModule="Lumity" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="470" height="115"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="470" height="115"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HPn-dQ-bPK" customClass="dateSportView" customModule="Lumity" customModuleProvider="target">
+                        <rect key="frame" x="15" y="10" width="60" height="60"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="iEo-ow-2qQ" customClass="dateSportImageView" customModule="Lumity" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="HPn-dQ-bPK" secondAttribute="height" multiplier="1:1" id="0Sp-ci-RYZ"/>
+                            <constraint firstItem="iEo-ow-2qQ" firstAttribute="leading" secondItem="HPn-dQ-bPK" secondAttribute="leading" id="7ga-xM-iP8"/>
+                            <constraint firstAttribute="bottom" secondItem="iEo-ow-2qQ" secondAttribute="bottom" id="7tY-96-Wv6"/>
+                            <constraint firstAttribute="width" constant="60" id="Czo-tq-8cL"/>
+                            <constraint firstAttribute="trailing" secondItem="iEo-ow-2qQ" secondAttribute="trailing" id="V1w-ut-O7B"/>
+                            <constraint firstItem="iEo-ow-2qQ" firstAttribute="top" secondItem="HPn-dQ-bPK" secondAttribute="top" id="hJT-Gc-hMx"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="30"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amy Baker" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LXq-OF-F9Y">
+                        <rect key="frame" x="85" y="10" width="247" height="16"/>
+                        <fontDescription key="fontDescription" name="Calibri-Bold" family="Calibri" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pbA-9A-bTo">
+                        <rect key="frame" x="342" y="0.0" width="115" height="115"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a3r-Uh-ORi" customClass="dateSportView" customModule="Lumity" customModuleProvider="target">
+                                <rect key="frame" x="8" y="30" width="99" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yQM-gO-MCN">
+                                        <rect key="frame" x="0.0" y="0.0" width="99" height="30"/>
+                                        <fontDescription key="fontDescription" name="Calibri-Bold" family="Calibri" pointSize="18"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Join"/>
+                                        <connections>
+                                            <action selector="onJoin:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="7oc-2P-YqQ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" name="Dark5BB5BE"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="5I8-Sl-BRv"/>
+                                    <constraint firstItem="yQM-gO-MCN" firstAttribute="leading" secondItem="a3r-Uh-ORi" secondAttribute="leading" id="9VE-tx-yG3"/>
+                                    <constraint firstItem="yQM-gO-MCN" firstAttribute="top" secondItem="a3r-Uh-ORi" secondAttribute="top" id="ZHA-JL-iDS"/>
+                                    <constraint firstAttribute="trailing" secondItem="yQM-gO-MCN" secondAttribute="trailing" id="j5y-1T-b9t"/>
+                                    <constraint firstAttribute="bottom" secondItem="yQM-gO-MCN" secondAttribute="bottom" id="mEl-uM-8MU"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" name="Dark5BB5BE"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="a3r-Uh-ORi" firstAttribute="leading" secondItem="pbA-9A-bTo" secondAttribute="leading" constant="8" id="KbQ-hO-67X"/>
+                            <constraint firstAttribute="width" constant="115" id="Q7x-v9-ug9"/>
+                            <constraint firstAttribute="trailing" secondItem="a3r-Uh-ORi" secondAttribute="trailing" constant="8" id="f5H-as-mdi"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SSa-t4-zvd">
+                        <rect key="frame" x="85" y="31" width="247" height="28"/>
+                        <string key="text">Graduate Student at Yale 
+University / Non-Profit Founder</string>
+                        <fontDescription key="fontDescription" name="Calibri" family="Calibri" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Interests :" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gmi-yO-JYx">
+                        <rect key="frame" x="85" y="67" width="247" height="15"/>
+                        <fontDescription key="fontDescription" name="Calibri-Bold" family="Calibri" pointSize="15"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="pbA-9A-bTo" firstAttribute="leading" secondItem="SSa-t4-zvd" secondAttribute="trailing" constant="10" id="35N-5W-kbz"/>
+                    <constraint firstItem="pbA-9A-bTo" firstAttribute="leading" secondItem="gmi-yO-JYx" secondAttribute="trailing" constant="10" id="8AT-cx-K1R"/>
+                    <constraint firstItem="a3r-Uh-ORi" firstAttribute="centerY" secondItem="SSa-t4-zvd" secondAttribute="centerY" id="AHT-UA-wlr"/>
+                    <constraint firstItem="gmi-yO-JYx" firstAttribute="leading" secondItem="HPn-dQ-bPK" secondAttribute="trailing" constant="10" id="Gua-u1-8Q6"/>
+                    <constraint firstItem="SSa-t4-zvd" firstAttribute="top" secondItem="LXq-OF-F9Y" secondAttribute="bottom" constant="5" id="LfW-Bu-J7b"/>
+                    <constraint firstItem="pbA-9A-bTo" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Lfe-wW-PoC"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="gmi-yO-JYx" secondAttribute="bottom" constant="25" id="Nbl-tI-vc1"/>
+                    <constraint firstItem="LXq-OF-F9Y" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="QT0-Ru-TzL"/>
+                    <constraint firstItem="HPn-dQ-bPK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="RrC-A2-LTE"/>
+                    <constraint firstItem="SSa-t4-zvd" firstAttribute="leading" secondItem="HPn-dQ-bPK" secondAttribute="trailing" constant="10" id="YXz-hX-Rfr"/>
+                    <constraint firstItem="pbA-9A-bTo" firstAttribute="leading" secondItem="LXq-OF-F9Y" secondAttribute="trailing" constant="10" id="lk6-22-THV"/>
+                    <constraint firstAttribute="bottom" secondItem="pbA-9A-bTo" secondAttribute="bottom" id="rnv-Vv-6NL"/>
+                    <constraint firstAttribute="trailing" secondItem="pbA-9A-bTo" secondAttribute="trailing" constant="13" id="wHb-U9-Fcz"/>
+                    <constraint firstItem="gmi-yO-JYx" firstAttribute="top" secondItem="SSa-t4-zvd" secondAttribute="bottom" constant="8" id="wfU-im-HFt"/>
+                    <constraint firstItem="LXq-OF-F9Y" firstAttribute="leading" secondItem="HPn-dQ-bPK" secondAttribute="trailing" constant="10" id="xnF-jP-7M2"/>
+                    <constraint firstItem="HPn-dQ-bPK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="zb0-uR-OTd"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="bioLabel" destination="SSa-t4-zvd" id="28t-91-3uh"/>
+                <outlet property="interestLabel" destination="gmi-yO-JYx" id="LNu-vE-5fz"/>
+                <outlet property="joinBtnBGView" destination="a3r-Uh-ORi" id="N7y-9s-a8u"/>
+                <outlet property="joinButton" destination="yQM-gO-MCN" id="K3W-NO-4Ap"/>
+                <outlet property="joinMainView" destination="pbA-9A-bTo" id="zIU-Bh-SOR"/>
+                <outlet property="userImageView" destination="iEo-ow-2qQ" id="gt8-aI-zQh"/>
+                <outlet property="userNameLabel" destination="LXq-OF-F9Y" id="IUS-5Z-KgR"/>
+            </connections>
+            <point key="canvasLocation" x="42.028985507246382" y="88.058035714285708"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="iEo-ow-2qQ">
+            <size key="intrinsicContentSize" width="128" height="128"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="placeholder" width="128" height="128"/>
+        <namedColor name="Dark5BB5BE">
+            <color red="0.35699999332427979" green="0.70999997854232788" blue="0.74500000476837158" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

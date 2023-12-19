@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Web View Screen-->
+        <scene sceneID="Ht5-wo-tmm">
+            <objects>
+                <viewController storyboardIdentifier="WebViewScreen" hidesBottomBarWhenPushed="YES" id="yQv-XW-4jN" customClass="WebViewScreen" customModule="Source_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WSS-ZK-2r5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qZu-7s-g07">
+                                <rect key="frame" x="0.0" y="4" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="6l8-cs-1Ja"/>
+                                    <constraint firstAttribute="width" constant="40" id="Scf-5l-kCK"/>
+                                </constraints>
+                                <state key="normal" image="ic_back"/>
+                                <connections>
+                                    <action selector="onBack:" destination="yQv-XW-4jN" eventType="touchUpInside" id="sVF-Vk-ITN"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_splash" translatesAutoresizingMaskIntoConstraints="NO" id="8LQ-SN-y09">
+                                <rect key="frame" x="180" y="7" width="54" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="54" id="2y8-Co-4dO"/>
+                                    <constraint firstAttribute="height" constant="34" id="UUb-80-Gld"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kdQ-91-6kZ">
+                                <rect key="frame" x="0.0" y="57" width="414" height="679"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="HvH-60-BSf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="8LQ-SN-y09" firstAttribute="centerX" secondItem="HvH-60-BSf" secondAttribute="centerX" id="1mf-9M-lSo"/>
+                            <constraint firstItem="kdQ-91-6kZ" firstAttribute="top" secondItem="8LQ-SN-y09" secondAttribute="bottom" constant="16" id="1z8-jS-kVZ"/>
+                            <constraint firstItem="kdQ-91-6kZ" firstAttribute="leading" secondItem="HvH-60-BSf" secondAttribute="leading" id="HJQ-75-dPQ"/>
+                            <constraint firstItem="8LQ-SN-y09" firstAttribute="centerY" secondItem="qZu-7s-g07" secondAttribute="centerY" id="OH8-Dz-cb2"/>
+                            <constraint firstItem="HvH-60-BSf" firstAttribute="trailing" secondItem="kdQ-91-6kZ" secondAttribute="trailing" id="TnM-qi-lxQ"/>
+                            <constraint firstItem="qZu-7s-g07" firstAttribute="leading" secondItem="HvH-60-BSf" secondAttribute="leading" id="jOW-2W-rs9"/>
+                            <constraint firstItem="qZu-7s-g07" firstAttribute="top" secondItem="HvH-60-BSf" secondAttribute="top" constant="4" id="oxZ-oB-RuV"/>
+                            <constraint firstItem="HvH-60-BSf" firstAttribute="bottom" secondItem="kdQ-91-6kZ" secondAttribute="bottom" id="q0A-ye-TEg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="containerView" destination="kdQ-91-6kZ" id="KdN-rS-tYu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OHK-I8-MQz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="128.98550724637681" y="175.27173913043481"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_back" width="21" height="21"/>
+        <image name="ic_splash" width="500" height="500"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

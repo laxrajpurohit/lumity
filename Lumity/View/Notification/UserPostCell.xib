@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="calibri.ttf">
+            <string>Calibri</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="246" id="KGk-i7-Jjw" customClass="UserPostCell" customModule="Lumity" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="436" height="246"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="436" height="246"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Wa-HF-04O" customClass="dateSportView" customModule="Lumity" customModuleProvider="target">
+                        <rect key="frame" x="10" y="35" width="70" height="70"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZE2-qi-iR4" customClass="dateSportImageView" customModule="Lumity" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="35"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W5i-3K-Ym0">
+                                <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
+                                <connections>
+                                    <action selector="onUser:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="HH7-bb-SQA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBlueColor"/>
+                        <constraints>
+                            <constraint firstItem="ZE2-qi-iR4" firstAttribute="top" secondItem="7Wa-HF-04O" secondAttribute="top" id="1sO-2P-u0t"/>
+                            <constraint firstItem="ZE2-qi-iR4" firstAttribute="leading" secondItem="7Wa-HF-04O" secondAttribute="leading" id="34G-SW-BBl"/>
+                            <constraint firstAttribute="width" secondItem="7Wa-HF-04O" secondAttribute="height" multiplier="1:1" id="HFw-85-O8u"/>
+                            <constraint firstAttribute="trailing" secondItem="W5i-3K-Ym0" secondAttribute="trailing" id="IOF-Vr-XNT"/>
+                            <constraint firstAttribute="trailing" secondItem="ZE2-qi-iR4" secondAttribute="trailing" id="VMd-me-atB"/>
+                            <constraint firstAttribute="bottom" secondItem="ZE2-qi-iR4" secondAttribute="bottom" id="d3u-9m-jIG"/>
+                            <constraint firstItem="W5i-3K-Ym0" firstAttribute="leading" secondItem="7Wa-HF-04O" secondAttribute="leading" id="dWX-4L-ssP"/>
+                            <constraint firstAttribute="bottom" secondItem="W5i-3K-Ym0" secondAttribute="bottom" id="eEa-ew-x9h"/>
+                            <constraint firstAttribute="width" constant="70" id="mB5-an-AgU"/>
+                            <constraint firstItem="W5i-3K-Ym0" firstAttribute="top" secondItem="7Wa-HF-04O" secondAttribute="top" id="qG1-70-c2h"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="35"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tim Ramsey shared your post" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d5p-h2-kLC">
+                        <rect key="frame" x="90" y="60.5" width="236" height="19"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" name="Calibri" family="Calibri" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="azi-H1-7jE" customClass="dateSportView" customModule="Lumity" customModuleProvider="target">
+                        <rect key="frame" x="336" y="10" width="90" height="120"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="q4L-3a-wu1" customClass="dateSportImageView" customModule="Lumity" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="90" height="120"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="q4L-3a-wu1" firstAttribute="leading" secondItem="azi-H1-7jE" secondAttribute="leading" id="JLO-Cx-6dD"/>
+                            <constraint firstAttribute="trailing" secondItem="q4L-3a-wu1" secondAttribute="trailing" id="L3Z-Tn-E45"/>
+                            <constraint firstItem="q4L-3a-wu1" firstAttribute="top" secondItem="azi-H1-7jE" secondAttribute="top" id="bZd-Hp-hEi"/>
+                            <constraint firstAttribute="height" constant="120" id="cK4-ns-oO2"/>
+                            <constraint firstAttribute="bottom" secondItem="q4L-3a-wu1" secondAttribute="bottom" id="nIF-i6-NaH"/>
+                            <constraint firstAttribute="width" constant="90" id="sjU-BY-qM1"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="d5p-h2-kLC" secondAttribute="bottom" constant="10" id="Aku-yC-F7l"/>
+                    <constraint firstItem="7Wa-HF-04O" firstAttribute="centerY" secondItem="azi-H1-7jE" secondAttribute="centerY" id="Cd0-Zg-G5P"/>
+                    <constraint firstItem="azi-H1-7jE" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="EEf-Fo-dkx"/>
+                    <constraint firstItem="d5p-h2-kLC" firstAttribute="leading" secondItem="7Wa-HF-04O" secondAttribute="trailing" constant="10" id="Ebs-kp-4fq"/>
+                    <constraint firstItem="azi-H1-7jE" firstAttribute="leading" secondItem="d5p-h2-kLC" secondAttribute="trailing" constant="10" id="MFD-QT-KXm"/>
+                    <constraint firstItem="d5p-h2-kLC" firstAttribute="top" relation="greaterThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="5" id="NR6-yF-vQz"/>
+                    <constraint firstAttribute="trailing" secondItem="azi-H1-7jE" secondAttribute="trailing" constant="10" id="Ot0-qa-CF8"/>
+                    <constraint firstItem="d5p-h2-kLC" firstAttribute="centerY" secondItem="7Wa-HF-04O" secondAttribute="centerY" id="cJb-0u-Eua"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="azi-H1-7jE" secondAttribute="bottom" constant="10" id="eQD-lp-fX4"/>
+                    <constraint firstItem="d5p-h2-kLC" firstAttribute="top" relation="greaterThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="rFR-Kq-dWd"/>
+                    <constraint firstItem="7Wa-HF-04O" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="t2O-fW-mMH"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="messageLabel" destination="d5p-h2-kLC" id="zj0-U1-eYI"/>
+                <outlet property="postImageView" destination="q4L-3a-wu1" id="sFc-JJ-uDR"/>
+                <outlet property="userImageView" destination="ZE2-qi-iR4" id="Rm7-j9-wsj"/>
+            </connections>
+            <point key="canvasLocation" x="-71.014492753623188" y="152.00892857142856"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

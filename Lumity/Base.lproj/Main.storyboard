@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="Lumity" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MlX-26-REB">
+                                <rect key="frame" x="0.0" y="340.5" width="414" height="215"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_splash" translatesAutoresizingMaskIntoConstraints="NO" id="dUH-Nj-aU1">
+                                        <rect key="frame" x="97" y="0.0" width="220" height="180"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="220" id="q1E-rr-KtZ"/>
+                                            <constraint firstAttribute="height" constant="180" id="rsk-xl-BgL"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Lumity_color" translatesAutoresizingMaskIntoConstraints="NO" id="dq7-QV-dEo">
+                                        <rect key="frame" x="0.0" y="170" width="414" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="qrQ-os-Igq"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="dUH-Nj-aU1" firstAttribute="centerX" secondItem="MlX-26-REB" secondAttribute="centerX" id="2yE-7N-9G9"/>
+                                    <constraint firstAttribute="trailing" secondItem="dq7-QV-dEo" secondAttribute="trailing" id="ODx-lu-kO8"/>
+                                    <constraint firstItem="dq7-QV-dEo" firstAttribute="centerX" secondItem="MlX-26-REB" secondAttribute="centerX" id="Xy8-GS-mtw"/>
+                                    <constraint firstAttribute="bottom" secondItem="dq7-QV-dEo" secondAttribute="bottom" id="Y5p-4W-a6Q"/>
+                                    <constraint firstItem="dUH-Nj-aU1" firstAttribute="top" secondItem="MlX-26-REB" secondAttribute="top" id="Zwd-LO-4fT"/>
+                                    <constraint firstItem="dq7-QV-dEo" firstAttribute="top" secondItem="dUH-Nj-aU1" secondAttribute="bottom" constant="-10" id="cTc-oc-YLH"/>
+                                    <constraint firstItem="dq7-QV-dEo" firstAttribute="leading" secondItem="MlX-26-REB" secondAttribute="leading" id="u0a-7K-0tT"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="MlX-26-REB" secondAttribute="trailing" id="I5v-Fc-ANw"/>
+                            <constraint firstItem="MlX-26-REB" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="XKs-gM-AkK"/>
+                            <constraint firstItem="MlX-26-REB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="YTg-T8-tT9"/>
+                            <constraint firstItem="MlX-26-REB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hOT-r9-dDD"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2.8985507246376816" y="61.607142857142854"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Lumity_color" width="196.5" height="58"/>
+        <image name="ic_splash" width="500" height="500"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

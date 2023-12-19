@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Calibri_Bold.ttf">
+            <string>Calibri-Bold</string>
+        </array>
+        <array key="calibri.ttf">
+            <string>Calibri</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Notification Screen-->
+        <scene sceneID="DBW-9j-Iuy">
+            <objects>
+                <viewController storyboardIdentifier="NotificationScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="yiR-Ix-L71" customClass="NotificationScreen" customModule="Lumity" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kVM-Z0-XCZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="SNS-7Z-crL">
+                                <rect key="frame" x="0.0" y="94" width="414" height="768"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="separatorColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </tableView>
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w19-Sq-J4v">
+                                <rect key="frame" x="10" y="54" width="60" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="VX0-dR-lm7"/>
+                                    <constraint firstAttribute="height" constant="40" id="zRb-xv-QuZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Calibri" family="Calibri" pointSize="18"/>
+                                <state key="normal" image="ic_back">
+                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="onBack:" destination="yiR-Ix-L71" eventType="touchUpInside" id="Lpf-92-Qx8"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notifications" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vdb-oC-0Rm">
+                                <rect key="frame" x="141" y="61.5" width="132.5" height="25"/>
+                                <fontDescription key="fontDescription" name="Calibri-Bold" family="Calibri" pointSize="25"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="AgE-1l-sco"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="AgE-1l-sco" firstAttribute="trailing" secondItem="SNS-7Z-crL" secondAttribute="trailing" id="6Mk-mc-JqC"/>
+                            <constraint firstItem="SNS-7Z-crL" firstAttribute="top" secondItem="w19-Sq-J4v" secondAttribute="bottom" id="FTU-5l-bzO"/>
+                            <constraint firstItem="SNS-7Z-crL" firstAttribute="leading" secondItem="AgE-1l-sco" secondAttribute="leading" id="RgN-XK-pMP"/>
+                            <constraint firstItem="vdb-oC-0Rm" firstAttribute="centerX" secondItem="AgE-1l-sco" secondAttribute="centerX" id="VG2-T6-1zD"/>
+                            <constraint firstItem="w19-Sq-J4v" firstAttribute="top" secondItem="AgE-1l-sco" secondAttribute="top" constant="10" id="Wdl-TF-OyE"/>
+                            <constraint firstItem="AgE-1l-sco" firstAttribute="bottom" secondItem="SNS-7Z-crL" secondAttribute="bottom" id="ZcQ-4P-W9Y"/>
+                            <constraint firstItem="vdb-oC-0Rm" firstAttribute="centerY" secondItem="w19-Sq-J4v" secondAttribute="centerY" id="kGe-Up-PNh"/>
+                            <constraint firstItem="w19-Sq-J4v" firstAttribute="leading" secondItem="AgE-1l-sco" secondAttribute="leading" constant="10" id="usa-Pg-veP"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="SNS-7Z-crL" id="Aie-oC-tAK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8sZ-7g-yHo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2.8985507246376816" y="43.526785714285715"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_back" width="21" height="21"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

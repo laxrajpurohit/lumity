@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="calibri.ttf">
+            <string>Calibri</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="BlockTableViewCell" rowHeight="72" id="KGk-i7-Jjw" customClass="BlockTableViewCell" customModule="Lumity" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="72"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="72"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lax" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R5L-E0-HtT">
+                        <rect key="frame" x="24" y="16" width="203.5" height="16"/>
+                        <fontDescription key="fontDescription" name="Calibri" family="Calibri" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lax" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xO5-1v-DKj">
+                        <rect key="frame" x="24" y="40" width="203.5" height="16"/>
+                        <fontDescription key="fontDescription" name="Calibri" family="Calibri" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Unblock" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h1z-GT-UYo">
+                        <rect key="frame" x="242" y="28" width="54" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="54" id="hxK-WQ-VZw"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Calibri" family="Calibri" pointSize="16"/>
+                        <color key="textColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="h1z-GT-UYo" secondAttribute="trailing" constant="24" id="1pD-cd-fiw"/>
+                    <constraint firstItem="xO5-1v-DKj" firstAttribute="trailing" secondItem="R5L-E0-HtT" secondAttribute="trailing" id="4wn-7i-XB5"/>
+                    <constraint firstItem="R5L-E0-HtT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="EDF-6J-Hu3"/>
+                    <constraint firstItem="xO5-1v-DKj" firstAttribute="top" secondItem="R5L-E0-HtT" secondAttribute="bottom" constant="8" id="KRX-fE-WAt"/>
+                    <constraint firstItem="xO5-1v-DKj" firstAttribute="leading" secondItem="R5L-E0-HtT" secondAttribute="leading" id="UDB-GF-Af0"/>
+                    <constraint firstItem="h1z-GT-UYo" firstAttribute="leading" secondItem="R5L-E0-HtT" secondAttribute="trailing" constant="14.5" id="d3T-oH-ppc"/>
+                    <constraint firstItem="R5L-E0-HtT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="g7e-Hh-8Oq"/>
+                    <constraint firstItem="h1z-GT-UYo" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="xAk-PH-o63"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="nameLabel" destination="R5L-E0-HtT" id="jSl-RN-Ewu"/>
+                <outlet property="timeLabel" destination="xO5-1v-DKj" id="2R3-Ue-x9h"/>
+                <outlet property="unBlockLabel" destination="h1z-GT-UYo" id="NS7-uV-cqT"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="85.714285714285708"/>
+        </tableViewCell>
+    </objects>
+</document>

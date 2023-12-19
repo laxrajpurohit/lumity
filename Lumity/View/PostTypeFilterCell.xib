@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="calibri.ttf">
+            <string>Calibri</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PostTypeFilterCell" id="gTV-IL-0wX" customClass="PostTypeFilterCell" customModule="Lumity_App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="93" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="93" height="50"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FNH-Pb-Ge3" customClass="dateSportView" customModule="Lumity_App" customModuleProvider="target">
+                        <rect key="frame" x="4" y="6" width="87" height="38"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="book_icon" translatesAutoresizingMaskIntoConstraints="NO" id="r7Y-4R-jiz">
+                                <rect key="frame" x="8" y="9" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="aj1-Rb-aHd"/>
+                                    <constraint firstAttribute="width" constant="20" id="tPD-rM-dY2"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Podcasts" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="biW-Sf-ORP">
+                                <rect key="frame" x="35" y="11.5" width="44" height="15"/>
+                                <fontDescription key="fontDescription" name="Calibri" family="Calibri" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="biW-Sf-ORP" firstAttribute="centerY" secondItem="r7Y-4R-jiz" secondAttribute="centerY" id="FRa-4Y-Xot"/>
+                            <constraint firstItem="biW-Sf-ORP" firstAttribute="leading" secondItem="r7Y-4R-jiz" secondAttribute="trailing" constant="7" id="Qkg-7W-wkl"/>
+                            <constraint firstItem="r7Y-4R-jiz" firstAttribute="centerY" secondItem="FNH-Pb-Ge3" secondAttribute="centerY" id="Vwi-ek-C6V"/>
+                            <constraint firstAttribute="trailing" secondItem="biW-Sf-ORP" secondAttribute="trailing" constant="8" id="X7j-az-qvB"/>
+                            <constraint firstItem="r7Y-4R-jiz" firstAttribute="leading" secondItem="FNH-Pb-Ge3" secondAttribute="leading" constant="8" id="zc2-LG-fdG"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                <real key="value" value="2"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                <size key="value" width="2" height="2"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                <real key="value" value="2"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="FNH-Pb-Ge3" secondAttribute="trailing" constant="2" id="4ki-EN-SIC"/>
+                <constraint firstItem="FNH-Pb-Ge3" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="6" id="MSc-ay-FIZ"/>
+                <constraint firstItem="FNH-Pb-Ge3" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="4" id="N2a-uK-QW2"/>
+                <constraint firstAttribute="bottom" secondItem="FNH-Pb-Ge3" secondAttribute="bottom" constant="6" id="XE6-PK-G3W"/>
+            </constraints>
+            <size key="customSize" width="93" height="50"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="postImageView" destination="r7Y-4R-jiz" id="Wb0-em-U8B"/>
+                <outlet property="postTypeView" destination="FNH-Pb-Ge3" id="o1t-PS-oWj"/>
+                <outlet property="titleLabel" destination="biW-Sf-ORP" id="58e-Zj-es4"/>
+            </connections>
+            <point key="canvasLocation" x="94.927536231884062" y="53.571428571428569"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="book_icon" width="84" height="84"/>
+    </resources>
+</document>

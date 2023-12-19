@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Quicksand-Regular.otf">
+            <string>Quicksand-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="SenderPhotosTableViewCell" rowHeight="164" id="KGk-i7-Jjw" customClass="SenderPhotosTableViewCell" customModule="Lumity" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="164"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="164"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ckb-cY-0sf" customClass="dateSportImageView" customModule="Lumity" customModuleProvider="target">
+                        <rect key="frame" x="16" y="16" width="120" height="120"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="120" id="R6w-Dx-8vR"/>
+                            <constraint firstAttribute="height" constant="120" id="pzv-wt-fhb"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5:52 PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xq7-bn-OtD">
+                        <rect key="frame" x="16" y="140" width="49" height="16"/>
+                        <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ckb-cY-0sf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="M9G-3C-ebH"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Xq7-bn-OtD" secondAttribute="bottom" constant="8" id="VBR-iu-Q7q"/>
+                    <constraint firstItem="ckb-cY-0sf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="cyc-CS-31T"/>
+                    <constraint firstItem="Xq7-bn-OtD" firstAttribute="leading" secondItem="ckb-cY-0sf" secondAttribute="leading" id="yc0-Vw-ijg"/>
+                    <constraint firstItem="Xq7-bn-OtD" firstAttribute="top" secondItem="ckb-cY-0sf" secondAttribute="bottom" constant="4" id="zEB-tj-sCw"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="photoImageView" destination="ckb-cY-0sf" id="sqD-3u-vEm"/>
+                <outlet property="timeLabel" destination="Xq7-bn-OtD" id="Sff-IM-GiV"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="121.875"/>
+        </tableViewCell>
+    </objects>
+</document>

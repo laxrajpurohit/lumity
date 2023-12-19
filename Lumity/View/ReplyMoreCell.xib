@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="calibri.ttf">
+            <string>Calibri</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="67" id="KGk-i7-Jjw" customClass="ReplyMoreCell" customModule="Lumity" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="412" height="67"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="412" height="67"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vfx-yN-TSH">
+                        <rect key="frame" x="40" y="33" width="100" height="1"/>
+                        <color key="backgroundColor" red="0.51372549020000002" green="0.50980392159999999" blue="0.49803921569999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="5aZ-GK-r1T"/>
+                            <constraint firstAttribute="height" constant="1" id="BaR-E8-N6U"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="View more replies" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iqn-3e-ILI">
+                        <rect key="frame" x="150" y="0.0" width="262" height="67"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" name="Calibri" family="Calibri" pointSize="15"/>
+                        <color key="textColor" red="0.5568627451" green="0.55294117649999996" blue="0.54117647059999996" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="Iqn-3e-ILI" secondAttribute="bottom" id="1V4-IR-vR6"/>
+                    <constraint firstItem="Vfx-yN-TSH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="40" id="7C1-g0-maS"/>
+                    <constraint firstAttribute="trailing" secondItem="Iqn-3e-ILI" secondAttribute="trailing" id="LWe-gp-JKp"/>
+                    <constraint firstItem="Iqn-3e-ILI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="T0h-BE-YKF"/>
+                    <constraint firstItem="Iqn-3e-ILI" firstAttribute="leading" secondItem="Vfx-yN-TSH" secondAttribute="trailing" constant="10" id="k18-QZ-SlJ"/>
+                    <constraint firstItem="Vfx-yN-TSH" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="ovv-fV-ItB"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <point key="canvasLocation" x="198.55072463768118" y="105.46875"/>
+        </tableViewCell>
+    </objects>
+</document>

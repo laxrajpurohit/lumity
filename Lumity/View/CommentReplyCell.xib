@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Calibri_Bold.ttf">
+            <string>Calibri-Bold</string>
+        </array>
+        <array key="calibri.ttf">
+            <string>Calibri</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="222" id="KGk-i7-Jjw" customClass="CommentReplyCell" customModule="Lumity" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="410" height="222"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="410" height="222"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pjl-js-9cz" customClass="dateSportView" customModule="Lumity" customModuleProvider="target">
+                        <rect key="frame" x="50" y="10" width="40" height="40"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="4xM-64-z9P" customClass="dateSportImageView" customModule="Lumity" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hJn-Ii-a1b">
+                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                <connections>
+                                    <action selector="onUser:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Y8t-SY-vIy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="4xM-64-z9P" firstAttribute="leading" secondItem="Pjl-js-9cz" secondAttribute="leading" id="18O-2w-7rC"/>
+                            <constraint firstAttribute="bottom" secondItem="hJn-Ii-a1b" secondAttribute="bottom" id="1tC-ez-uKl"/>
+                            <constraint firstAttribute="bottom" secondItem="4xM-64-z9P" secondAttribute="bottom" id="52c-yj-Cn3"/>
+                            <constraint firstAttribute="trailing" secondItem="hJn-Ii-a1b" secondAttribute="trailing" id="ASJ-TY-EWe"/>
+                            <constraint firstItem="hJn-Ii-a1b" firstAttribute="top" secondItem="Pjl-js-9cz" secondAttribute="top" id="EsJ-bS-xTG"/>
+                            <constraint firstAttribute="height" constant="40" id="HAa-d8-zCU"/>
+                            <constraint firstItem="hJn-Ii-a1b" firstAttribute="leading" secondItem="Pjl-js-9cz" secondAttribute="leading" id="KP9-Zq-kmP"/>
+                            <constraint firstItem="4xM-64-z9P" firstAttribute="top" secondItem="Pjl-js-9cz" secondAttribute="top" id="KST-tJ-70o"/>
+                            <constraint firstAttribute="trailing" secondItem="4xM-64-z9P" secondAttribute="trailing" id="RB7-Sa-okm"/>
+                            <constraint firstAttribute="width" constant="40" id="jzv-f3-04L"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="20"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aR6-uS-2QP">
+                        <rect key="frame" x="100" y="10" width="11.5" height="18"/>
+                        <fontDescription key="fontDescription" name="Calibri-Bold" family="Calibri" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UhR-ZW-LUa">
+                        <rect key="frame" x="119.5" y="12" width="9" height="14"/>
+                        <fontDescription key="fontDescription" name="Calibri" family="Calibri" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iLz-2S-XuO">
+                        <rect key="frame" x="352" y="2" width="50" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="43h-VU-MZi"/>
+                            <constraint firstAttribute="height" constant="30" id="Rdg-an-odQ"/>
+                        </constraints>
+                        <state key="normal" image="more_option_icon"/>
+                        <connections>
+                            <action selector="onMore:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Igl-3b-qLA"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qpr-8J-79e">
+                        <rect key="frame" x="100" y="33" width="247" height="14"/>
+                        <fontDescription key="fontDescription" name="Calibri" family="Calibri" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oH0-Oe-U00">
+                        <rect key="frame" x="100" y="57" width="280" height="15"/>
+                        <fontDescription key="fontDescription" name="Calibri" family="Calibri" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0G0-sC-kHp">
+                        <rect key="frame" x="100" y="82" width="36" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="3bN-GW-2UR"/>
+                            <constraint firstAttribute="width" constant="36" id="foE-vP-l6F"/>
+                        </constraints>
+                        <state key="normal" image="like_thumb_icon"/>
+                        <connections>
+                            <action selector="onLike:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="LI7-xc-cs6"/>
+                        </connections>
+                    </button>
+                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="--" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cOS-Wa-GRG">
+                        <rect key="frame" x="136" y="94" width="8" height="12"/>
+                        <fontDescription key="fontDescription" name="Calibri" family="Calibri" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="epu-TM-jEk">
+                        <rect key="frame" x="136" y="82" width="0.0" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" id="Wq5-ip-Whz"/>
+                        </constraints>
+                        <connections>
+                            <action selector="onLikeCount:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="J6G-FM-Kjh"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hzv-Ux-tfp">
+                        <rect key="frame" x="146" y="87" width="34" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="AU3-aE-plJ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Calibri" family="Calibri" pointSize="15"/>
+                        <state key="normal" title="Reply">
+                            <color key="titleColor" red="0.55686274509803924" green="0.55294117647058827" blue="0.54117647058823526" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="onReply:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="P21-yH-p4k"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="Pjl-js-9cz" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="0pZ-lU-Hwn"/>
+                    <constraint firstItem="epu-TM-jEk" firstAttribute="top" secondItem="0G0-sC-kHp" secondAttribute="top" id="1XG-Zv-dG7"/>
+                    <constraint firstItem="oH0-Oe-U00" firstAttribute="top" secondItem="qpr-8J-79e" secondAttribute="bottom" constant="10" id="9Zi-fP-Ypq"/>
+                    <constraint firstItem="0G0-sC-kHp" firstAttribute="leading" secondItem="oH0-Oe-U00" secondAttribute="leading" id="9rl-3P-F9U"/>
+                    <constraint firstItem="oH0-Oe-U00" firstAttribute="leading" secondItem="qpr-8J-79e" secondAttribute="leading" id="B5k-cZ-Fer"/>
+                    <constraint firstItem="cOS-Wa-GRG" firstAttribute="centerY" secondItem="0G0-sC-kHp" secondAttribute="centerY" constant="3" id="J6q-wx-kEL"/>
+                    <constraint firstItem="0G0-sC-kHp" firstAttribute="top" secondItem="oH0-Oe-U00" secondAttribute="bottom" constant="10" id="JE6-PD-JuK"/>
+                    <constraint firstItem="iLz-2S-XuO" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="UhR-ZW-LUa" secondAttribute="trailing" constant="5" id="MPu-Qq-LHs"/>
+                    <constraint firstItem="aR6-uS-2QP" firstAttribute="leading" secondItem="Pjl-js-9cz" secondAttribute="trailing" constant="10" id="NG8-Cr-kcM"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="0G0-sC-kHp" secondAttribute="bottom" constant="10" id="OnS-fW-Uke"/>
+                    <constraint firstItem="qpr-8J-79e" firstAttribute="leading" secondItem="Pjl-js-9cz" secondAttribute="trailing" constant="10" id="PnU-cY-46S"/>
+                    <constraint firstItem="qpr-8J-79e" firstAttribute="top" secondItem="aR6-uS-2QP" secondAttribute="bottom" constant="5" id="RSS-Bt-eip"/>
+                    <constraint firstItem="iLz-2S-XuO" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="2" id="Uc7-SF-FoL"/>
+                    <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="hzv-Ux-tfp" secondAttribute="trailing" constant="5" id="Y5j-Hm-0Sd"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="oH0-Oe-U00" secondAttribute="trailing" constant="10" id="fRi-EO-98h"/>
+                    <constraint firstItem="UhR-ZW-LUa" firstAttribute="centerY" secondItem="aR6-uS-2QP" secondAttribute="centerY" id="fvI-jc-Jec"/>
+                    <constraint firstItem="hzv-Ux-tfp" firstAttribute="leading" secondItem="epu-TM-jEk" secondAttribute="trailing" constant="10" id="gTe-CQ-kN3"/>
+                    <constraint firstAttribute="trailing" secondItem="iLz-2S-XuO" secondAttribute="trailing" constant="8" id="jyT-wo-sf8"/>
+                    <constraint firstItem="iLz-2S-XuO" firstAttribute="leading" secondItem="qpr-8J-79e" secondAttribute="trailing" constant="5" id="mfY-UZ-gSX"/>
+                    <constraint firstItem="epu-TM-jEk" firstAttribute="leading" secondItem="cOS-Wa-GRG" secondAttribute="leading" id="n8Z-CO-2XT"/>
+                    <constraint firstItem="Pjl-js-9cz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="50" id="o87-ve-c0n"/>
+                    <constraint firstItem="hzv-Ux-tfp" firstAttribute="centerY" secondItem="0G0-sC-kHp" secondAttribute="centerY" id="oFD-KU-3ZT"/>
+                    <constraint firstItem="aR6-uS-2QP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="r1G-1G-J7T"/>
+                    <constraint firstItem="UhR-ZW-LUa" firstAttribute="leading" secondItem="aR6-uS-2QP" secondAttribute="trailing" constant="8" id="t8q-xD-08S"/>
+                    <constraint firstItem="cOS-Wa-GRG" firstAttribute="leading" secondItem="0G0-sC-kHp" secondAttribute="trailing" id="tP0-aE-IRo"/>
+                    <constraint firstItem="epu-TM-jEk" firstAttribute="bottom" secondItem="0G0-sC-kHp" secondAttribute="bottom" id="wKl-K0-sfJ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="commentTextLabel" destination="oH0-Oe-U00" id="fKg-MB-nG6"/>
+                <outlet property="headlineLabel" destination="qpr-8J-79e" id="1Ka-jL-rG0"/>
+                <outlet property="likeButton" destination="0G0-sC-kHp" id="aB6-l6-Gn6"/>
+                <outlet property="likeCountLabel" destination="cOS-Wa-GRG" id="l41-NV-6AN"/>
+                <outlet property="moreButton" destination="iLz-2S-XuO" id="Bs1-Ha-tOc"/>
+                <outlet property="replyButton" destination="hzv-Ux-tfp" id="RCy-q1-4py"/>
+                <outlet property="timeLabel" destination="UhR-ZW-LUa" id="D85-Al-WHF"/>
+                <outlet property="userImageView" destination="4xM-64-z9P" id="wjn-Ww-fk7"/>
+                <outlet property="userNameLabel" destination="aR6-uS-2QP" id="wEv-7k-hPQ"/>
+            </connections>
+            <point key="canvasLocation" x="197.10144927536234" y="136.60714285714286"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="4xM-64-z9P">
+            <size key="intrinsicContentSize" width="128" height="128"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="like_thumb_icon" width="20" height="20"/>
+        <image name="more_option_icon" width="20" height="20"/>
+        <image name="placeholder" width="128" height="128"/>
+    </resources>
+</document>
